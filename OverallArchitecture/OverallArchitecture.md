@@ -18,11 +18,11 @@ architecture-beta
     group external(cloud)[External]
         service stytch(internet)[Stytch API] in external
 
-    portalReact:R --> T:stytch
-    portalReact:R --> T:portalRuby
-    portalReact:B --> T:alexandria
+    portalReact:B --> T:stytch
+    portalReact:L --> L:portalRuby
+    portalReact:T --> T:alexandria
     alexandria:L --> R:ag
-    portalRuby:T --> L:portunus
+    portalRuby:R --> L:portunus
     portunus:R --> L:stytch
 
     portalRuby:B --> T:db_portal
